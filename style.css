@@ -136,7 +136,7 @@ nav  a:hover{
     height: 40px;
     background:  white;
     border: none;
-    color: #109397;
+    color: white;
     margin-bottom: 16px;
     padding: 10px, 20px;
     border-bottom-left-radius: 30px;
@@ -145,6 +145,7 @@ nav  a:hover{
     border-top-right-radius: 30px;
     cursor: pointer;
     box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
 }
 main{
     background-color: white;
@@ -162,27 +163,31 @@ main{
 #inventario {
     color: #109397;
     width: 100%;
-    /*height: ;*/
     background-color: white;
     padding-bottom: 50px;
+    margin: auto;
+
 }
 
 .titulo {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #109397;
 }
 footer{
     background-color: whitesmoke;
     text-align: center;
     position: absolute;
     width: 100%;
-    padding: 5px;
+    padding: 20px;
 }
 #stock{
     color: #109397;
     width: 100%;
     background-color: white;
     padding-bottom: 50px;
+    margin: auto;
 }
 #producto{
     color: #109397;
@@ -201,4 +206,38 @@ footer{
     width: 100%;
     background-color: white;
     padding-bottom: 50px;
+}
+#guardar{
+    color: #109397;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+#inv{
+    width: 500px;
+    height: 750px;
+    padding: auto;
+    margin: auto;
+}
+
+#enviar{
+    color: #109397;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+#contactanos{
+    height: 750px;
+    width: 500px;
+    padding: auto;
+    margin: auto;
+}
+
+#miperfil{
+    height: 750px;
+    width: 200px;
+    padding: auto;
+    margin: auto;
 }
