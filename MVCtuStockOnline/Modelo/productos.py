@@ -1,0 +1,10 @@
+class Producto:
+    Codigo = ""
+    Nombre = ""
+    Marca = ""
+    Categoria = ""
+    Descripcion = ""
+    PrecioDeVenta = ""
+    CantidadPorBulto = ""
+    FechaDeVencimiento = ""
+    Foto = ""
