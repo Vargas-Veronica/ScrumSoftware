@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-#bodyindex {
+.bodyindex {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
 }
@@ -226,6 +226,7 @@ footer{
     width: 100%;
     background-color: white;
     padding-bottom: 50px;
+
 }
 
 #contactanos{
@@ -241,3 +242,68 @@ footer{
     padding: auto;
     margin: auto;
 }
+
+/* RECUPERAR CONTRASEÑA */
+
+.contenedor{
+    display: inline-block;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 30%;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid #109397;
+    box-shadow: 5px 12px 30px #000;
+}
+
+.recuPass{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #109397;
+    
+}
+
+.mail{
+    padding: 10px;
+    width: 45%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 0.5px solid #109397;
+    }
+
+    .boton{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        /* font-weight: bold; */
+        color: white;
+        padding: 10px;
+        width: 50%;
+        height: 40%;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border: 0.5px solid #109397;
+        background-color: #109397;
+    }
+
+    .boton:hover{
+        color: black;
+        font-weight: bold;
+    }
+
+     .imagen-recu{
+        width: 131px;
+        height: 75px;
+    }       
+    
+    .linea{
+        width: 60%;
+        margin-left: 20%;
+    }
