@@ -1,0 +1,1 @@
+#Escanear producto()
