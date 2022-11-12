@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Tu Stock Online</title>
+</head>
+<body>
+    
+       
+   
+    <main class="main">
+        <div class="form">
+          <h2>Tu Stock Online</h2>
+          <h4>Formulario de registro</h4>
+          <form action="" class="form" method="post">
+            <div class="form-field">
+              <label for="name">Nombre completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+                minlength="3"
+                maxlength="40"
+              />
+            </div>
+            <div class="form-field">
+              <label for="mail">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="mail"
+                name="user_mail"
+                required
+              />
+            </div>
+  
+            <div class="form-field">
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="user_password"
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="password_repeat">Repetir contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password_repeat"
+                name="user_password_repeat"
+                required
+                minlength="8"
+              />
+            </div>
+  
+            <div class="form-field">
+              <label for="nim">Numero de telefono</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="tel"
+                name="user_nim"
+                required
+                maxlength="10"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark"
+              id="btn-register"
+              data-bs-target="#modal"
+            >
+              Registrarme
+            </button>
+          </form>
+          <div
+            class="modal fade"
+            id="modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Bienvenido
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Te has registrado de manera exitosa!</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="./index.html">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Ir al inicio
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+  
+      
+    </body>
+    <script src="register-form.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </html>
+  
