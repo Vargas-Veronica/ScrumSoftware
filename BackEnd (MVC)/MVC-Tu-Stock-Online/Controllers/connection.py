@@ -10,7 +10,7 @@ class Dao:
                 port=3306,
                 user='root',             
                 password='root',   
-                database='tuStockonline'
+                database='tuStockOnline'
             )
         except Error as e:
             print(f"Conexion no establecida: {e}")
@@ -86,4 +86,5 @@ class Dao:
                             role_user INT,
                             FOREIGN KEY(role_user) REFERENCES Role(id_role)
                              )""")
+                             
                                     
