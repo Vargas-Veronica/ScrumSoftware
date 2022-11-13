@@ -86,7 +86,7 @@ class Producto:
       
                      
     
-    def __init__(self, codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDeVencimiento, foto):
+    def __init__(self, codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDeVencimiento):
          self.codigo = codigo
          self.nombre = nombre
          self.marca = marca
@@ -95,7 +95,6 @@ class Producto:
          self.precioDeVenta = precioDeVenta
          self.cantidadPorBulto  = cantidadPorBulto
          self.fechaDeVencimiento = fechaDeVencimiento
-         self.foto = foto
-
+         
 
      
