@@ -54,11 +54,22 @@ ENGINE = InnoDB;
   `cantidadPorBulto` INT NOT NULL,
   `fechaDeVencimiento` DATE NOT NULL,
 
-  UNIQUE INDEX `ID_UNIQUE` (`ID_PRODUCTO` ASC) VISIBLE,
-  PRIMARY KEY (`ID_PRODUCTO`))
+  UNIQUE INDEX `ID_UNIQUE` (`ID_Producto` ASC) VISIBLE,
+  PRIMARY KEY (`ID_Producto`))
 ENGINE = InnoDB;
 
-
+ CREATE TABLE IF NOT EXISTS `tuStockOnline`.`STOCK`(  
+  `ID_stock` INT NOT NULL AUTO_INCREMENT,
+  `ID_Producto` INT NOT NULL, 
+  `codigo` INT NOT NULL, 
+  `producto` VARCHAR(45) NOT NULL,
+  `stockMinimo` INT NOT NULL, 
+  `stockMaximo` INT NOT NULL, 
+  `stockActual` INT NOT NULL, 
+  `cantidadDeVentas` INT NOT NULL,
+  UNIQUE INDEX `ID_UNIQUE` (`ID_stock` ASC) VISIBLE,
+  PRIMARY KEY (`ID_stock`))
+ENGINE = InnoDB;
 
 -- Inserts user
 INSERT INTO user (name, email, password) VALUES ('Rosemary Southey', 'rsouthey0@delicious.com', 'TP6Rj129');
@@ -77,6 +88,23 @@ VALUES (1, 2),
        (3, 1),
        (4, 1),
        (5, 2);
+        
+       
+ -- Inserts productos
+INSERT INTO productos (codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDEVencimiento) VALUES ( 1, 'mate', 'Marolio', 'Almacen', 'paquete', 200, 12 ,'12/12/25');
+INSERT INTO productos (codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDEVencimiento) VALUES ( 2, 'cafe', 'Marolio', 'Almacen', 'paquete', 900, 6 ,'12/12/25');
+INSERT INTO productos (codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDEVencimiento) VALUES ( 3, 'harina', 'Marolio', 'Almacen', 'paquete', 200, 12 ,'12/12/25');
+INSERT INTO productos (codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDEVencimiento) VALUES ( 4, 'palmitos', 'Marolio', 'Almacen', 'paquete', 300, 12 ,'12/12/25');
+INSERT INTO productos (codigo, nombre, marca, categoria, descripcion, precioDeVenta, cantidadPorBulto, fechaDEVencimiento) VALUES ( 5, 'yerba', 'Marolio', 'Almacen', 'paquete', 500, 12 ,'12/12/25');
+ 
+ 
+-- Inserts stock
+INSERT INTO user (producto, stockMinimo, stockMaximo, stockActual, cantidadDeVentas) VALUES ('mermelada', 200, 800, 500, 100);
+INSERT INTO user (producto, stockMinimo, stockMaximo, stockActual, cantidadDeVentas) VALUES ('cacao', 300, 200, 500, 300);
+INSERT INTO user (producto, stockMinimo, stockMaximo, stockActual, cantidadDeVentas) VALUES ('picadillo', 300, 300, 500, 400);
+INSERT INTO user (producto, stockMinimo, stockMaximo, stockActual, cantidadDeVentas) VALUES ('pate', 100, 800, 400, 500);
+INSERT INTO user (producto, stockMinimo, stockMaximo, stockActual, cantidadDeVentas) VALUES ('caballa', 100, 800, 500, 600);
+
 
 -- Select All From User
 SELECT * FROM user;
