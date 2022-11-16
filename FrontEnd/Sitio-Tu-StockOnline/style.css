@@ -90,9 +90,19 @@ img{
     border-bottom: 1px solid;
 
 }
-.ingresar {
+.ingresar{
     color: white;
+    text-decoration: none;
+    
 }
+
+.ingresar:hover{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
 .olvidaste {
     color: #109397;
 }
@@ -130,7 +140,6 @@ nav a{
     color: #109397;
     font-weight: bolder;
     text-decoration: none;
-       
 }
 
 
@@ -140,7 +149,6 @@ nav a:hover{
     text-decoration: none;  
     
 }
-
 
 .buttons {
     width: 100px;
@@ -158,8 +166,67 @@ nav a:hover{
     box-shadow: 1px 1px 5px #000;
     text-decoration: none;
     margin:2%;
+}
+
+.button-inicio{
+    width: 100px;
+    height: 40px;
+    background:salmon;
+    border: none;
+    color: black;
+    margin-bottom: 16px;
+    padding: 10px, 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin:2%;
+}
+
+.button-inicio a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button-inicio a:hover{
+    color: black;
+}
+
+.button-volver{
+    width: 150px;
+    height: 40px;
+    background: salmon;
+    border: none;
+    margin-bottom: 16px;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin-left:5%;
+    margin-top: 5%;
+}
+
+.button-volver a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
     
 }
+
+.button-volver a:hover{
+    background-color: salmon;
+}
+
+
+
 main{
     background-color: white;
     height: 80%;
@@ -380,4 +447,8 @@ footer{
     padding: 2em;
     background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
     margin-top: auto;
+}
+
+footer{
+    font-size: small;
 }
