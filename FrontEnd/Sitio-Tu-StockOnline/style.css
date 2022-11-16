@@ -196,6 +196,34 @@ nav a:hover{
     color: black;
 }
 
+.button-menu{
+    width: 100px;
+    height: 40px;
+    background:salmon;
+    border: none;
+    color: black;
+    margin-bottom: 16px;
+    padding: 10px, 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin:2%;
+}
+
+.button-menu a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button-menu a:hover{
+    color: black;
+}
+
 .button-volver{
     width: 150px;
     height: 40px;
