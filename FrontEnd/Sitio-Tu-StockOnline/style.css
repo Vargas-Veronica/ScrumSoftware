@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    position: relative;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
 .bodyindex {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
@@ -82,9 +90,19 @@ img{
     border-bottom: 1px solid;
 
 }
-.ingresar {
+.ingresar{
     color: white;
+    text-decoration: none;
+    
 }
+
+.ingresar:hover{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
 .olvidaste {
     color: #109397;
 }
@@ -113,23 +131,24 @@ header{
 nav{
     text-align: left;
     padding: 30px 50px 0 0;
-
+    display: flex;
+    justify-content: center;
+       
 }
 
 nav a{
     color: #109397;
-    font-weight: 300;
+    font-weight: bolder;
     text-decoration: none;
-       
 }
 
 
-nav  a:hover{
+nav a:hover{
     color: black;
-    font-weight: 300;
+    font-weight: bolder;
     text-decoration: none;  
+    
 }
-
 
 .buttons {
     width: 100px;
@@ -146,7 +165,96 @@ nav  a:hover{
     cursor: pointer;
     box-shadow: 1px 1px 5px #000;
     text-decoration: none;
+    margin:2%;
 }
+
+.button-inicio{
+    width: 100px;
+    height: 40px;
+    background:salmon;
+    border: none;
+    color: black;
+    margin-bottom: 16px;
+    padding: 10px, 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin:2%;
+}
+
+.button-inicio a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button-inicio a:hover{
+    color: black;
+}
+
+.button-menu{
+    width: 100px;
+    height: 40px;
+    background:salmon;
+    border: none;
+    color: black;
+    margin-bottom: 16px;
+    padding: 10px, 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin:2%;
+}
+
+.button-menu a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button-menu a:hover{
+    color: black;
+}
+
+.button-volver{
+    width: 150px;
+    height: 40px;
+    background: salmon;
+    border: none;
+    margin-bottom: 16px;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin-left:5%;
+    margin-top: 5%;
+}
+
+.button-volver a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
+.button-volver a:hover{
+    background-color: salmon;
+}
+
+
+
 main{
     background-color: white;
     height: 80%;
@@ -171,17 +279,21 @@ main{
 
 .titulo {
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /**color: #109397; **/
+    color: white;
+}
+
+
+.titulo-menu{
     color: #109397;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
 }
-footer{
-    background-color: whitesmoke;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-}
+
+
 #stock{
     color: #109397;
     width: 100%;
@@ -296,6 +408,7 @@ footer{
     .boton:hover{
         color: black;
         font-weight: bold;
+
     }
 
      .imagen-recu{
@@ -332,4 +445,72 @@ footer{
     background-size: cover;
     background-attachment: fixed;
 
+}
+
+.bodyrecu{
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+
+.form-menu{
+    width: 340px;
+    height: 210px;
+    background: white;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #109397;
+    color: #109397;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 10%;
+}
+
+
+footer{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2em;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    margin-top: auto;
+}
+
+footer{
+    font-size: small;
+}
+
+.btn-salir{
+
+}
+
+
+.btn-salir{
+    width: 100px;
+    height: 40px;
+    background:salmon;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 16px;
+    padding: 10px, 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin:2%;
+}
+
+.btn-salir a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.btn-salir a:hover{
+    color: black;
 }
