@@ -479,4 +479,41 @@ footer{
 
 footer{
     font-size: small;
+<<<<<<< HEAD
+=======
+}
+
+.btn-salir{
+
+}
+
+
+.btn-salir{
+    width: 100px;
+    height: 40px;
+    background:salmon;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 16px;
+    padding: 10px, 20px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #000;
+    text-decoration: none;
+    margin:2%;
+}
+
+.btn-salir a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.btn-salir a:hover{
+    color: black;
+>>>>>>> developer
 }
